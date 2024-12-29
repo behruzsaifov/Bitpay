@@ -1,0 +1,13 @@
+# Исключение папок obj и bin
+**/bin/
+**/obj/
+
+# Исключение файлов сборки
+*.nuget.g.props
+*.nuget.g.targets
+*.nuget.dgspec.json
+*.assets.json
+*.nuget.cache
+*.packagespec.json
+*.restore.info
+*.model.nuget.info

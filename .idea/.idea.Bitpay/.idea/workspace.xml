@@ -12,65 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1df63758-e776-45fd-8414-0156deaf6ef2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/ApplicationServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/Database/DbConnectionFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/Database/DbInitializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/Models/Payment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/Repositories/IPaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/Repositories/PaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bitpay.Application/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bitpay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bitpay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Api.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/Bitpay.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/bin/Debug/net9.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Bitpay.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Bitpay.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/Bitpay.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/ref/Bitpay.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/ref/Bitpay.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/refint/Bitpay.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/Debug/net9.0/refint/Bitpay.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/Bitpay.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/Bitpay.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/bin/Debug/net9.0/Bitpay.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Bitpay.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Bitpay.Application.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/ref/Bitpay.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/ref/Bitpay.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/refint/Bitpay.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/Debug/net9.0/refint/Bitpay.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Contracts/obj/Debug/net9.0/Bitpay.Contracts.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Contracts/obj/Debug/net9.0/Bitpay.Contracts.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Contracts/obj/Debug/net9.0/Bitpay.Contracts.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Contracts/obj/Debug/net9.0/Bitpay.Contracts.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Contracts/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Contracts/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bitpay.Contracts/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Bitpay.Contracts/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +38,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Application/bin/Debug/net9.0/Application.runtimeconfig.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/beha1/RiderProjects/Bitpay/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/beha1/RiderProjects/Bitpay/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.sourcelink.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/beha1/RiderProjects/Bitpay/Bitpay.Application/obj/Debug/net9.0/Bitpay.Application.sourcelink.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -206,7 +162,7 @@
       <workItem from="1735409193161" duration="2802000" />
       <workItem from="1735456533350" duration="418000" />
       <workItem from="1735472238590" duration="2353000" />
-      <workItem from="1735474659117" duration="953000" />
+      <workItem from="1735474659117" duration="1230000" />
     </task>
     <servers />
   </component>

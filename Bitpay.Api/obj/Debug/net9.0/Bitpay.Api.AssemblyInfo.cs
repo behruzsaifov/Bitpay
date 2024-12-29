@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bitpay.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82e20d7a0bced332b3a87fe8c9dbc04613ec80d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b0411c7cfe02a9ef4ca69398de1d7d09aa2da0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bitpay.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bitpay.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
