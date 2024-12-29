@@ -14,13 +14,13 @@ public class Payment
     public string AccountType { get; set; }
     
     [Required]
-    public float Amount { get; set; }
+    public decimal Amount { get; set; }
     
     [Required]
     public string Currency { get; set; }
 
+    [Required]
     public string Status { get; set; }
-    
     public DateTime? CreatedAt { get; init; }
     
     public DateTime? UpdatedAt { get; set; }

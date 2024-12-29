@@ -11,7 +11,7 @@ public class CreatePaymentRequest
     public string AccountType { get; init; }
     
     [Required]
-    public float Amount { get; init; }
+    public decimal Amount { get; init; }
     
     [Required]
     public string Currency { get; init; }
