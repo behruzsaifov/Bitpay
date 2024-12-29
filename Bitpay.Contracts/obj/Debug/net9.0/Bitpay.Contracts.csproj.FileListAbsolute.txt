@@ -9,3 +9,4 @@ C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Contracts\obj\Debug\net9.0\Bitpay.Con
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Contracts\obj\Debug\net9.0\refint\Bitpay.Contracts.dll
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Contracts\obj\Debug\net9.0\Bitpay.Contracts.pdb
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Contracts\obj\Debug\net9.0\ref\Bitpay.Contracts.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Contracts\obj\Debug\net9.0\Bitpay.Contracts.sourcelink.json
