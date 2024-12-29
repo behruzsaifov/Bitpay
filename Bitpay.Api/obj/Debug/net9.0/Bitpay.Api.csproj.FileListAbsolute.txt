@@ -35,3 +35,6 @@ C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\obj\Debug\net9.0\refint\Bitpay.Ap
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\obj\Debug\net9.0\Bitpay.Api.pdb
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\obj\Debug\net9.0\Bitpay.Api.genruntimeconfig.cache
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\obj\Debug\net9.0\ref\Bitpay.Api.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\bin\Debug\net9.0\Dapper.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\bin\Debug\net9.0\Npgsql.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Api\obj\Debug\net9.0\Bitpay.Api.sourcelink.json

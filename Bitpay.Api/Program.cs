@@ -1,9 +1,15 @@
+using Bitpay.Application;
+using Bitpay.Application.Database;
+
 var builder = WebApplication.CreateBuilder(args);
+var config = builder.Configuration;
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApplicationServices();
+builder.Services.AddDatabase(config["Database:ConnectionString"]!);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,7 +38,8 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
-
+var dbinitializer = app.Services.GetRequiredService<DbInitializer>();
+await dbinitializer.InitializerAsync();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

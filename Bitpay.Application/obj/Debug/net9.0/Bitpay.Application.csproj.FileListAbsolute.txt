@@ -9,3 +9,5 @@ C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.A
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\refint\Bitpay.Application.dll
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.pdb
 C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\ref\Bitpay.Application.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.csproj.AssemblyReference.cache
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.sourcelink.json
