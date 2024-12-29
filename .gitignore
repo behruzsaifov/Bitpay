@@ -1,13 +1,22 @@
-# Исключение папок obj и bin
-**/bin/
-**/obj/
+# Игнорируем временные файлы сборки
+*.exe
+*.dll
+*.pdb
+*.cache
+*.json
 
-# Исключение файлов сборки
-*.nuget.g.props
-*.nuget.g.targets
-*.nuget.dgspec.json
-*.assets.json
-*.nuget.cache
-*.packagespec.json
-*.restore.info
-*.model.nuget.info
+# Игнорируем папки Debug и Release
+bin/
+obj/
+
+# Rider-specific
+.idea/
+*.sln.iml
+
+# Игнорировать временные файлы сборки MSBuild
+*.csproj.user
+*.csprojAssemblyReference.cache
+*.csproj.FileListAbsolute.txt
+
+# Игнорируем файлы SourceLink (отладки)
+*.sourcelink.json

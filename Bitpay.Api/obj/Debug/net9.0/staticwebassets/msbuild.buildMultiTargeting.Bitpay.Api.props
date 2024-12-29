@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Bitpay.Api.props" />
-</Project>
