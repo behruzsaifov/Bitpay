@@ -1,0 +1,11 @@
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\bin\Debug\net9.0\Bitpay.Application.deps.json
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\bin\Debug\net9.0\Bitpay.Application.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\bin\Debug\net9.0\Bitpay.Application.pdb
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.AssemblyInfoInputs.cache
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.AssemblyInfo.cs
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.csproj.CoreCompileInputs.cache
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\refint\Bitpay.Application.dll
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\Bitpay.Application.pdb
+C:\Users\beha1\RiderProjects\Bitpay\Bitpay.Application\obj\Debug\net9.0\ref\Bitpay.Application.dll

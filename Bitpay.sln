@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpay.Api", "Bitpay.Api\Bitpay.Api.csproj", "{97F5DC18-738D-480C-897F-63F109D8BDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpay.Application", "Bitpay.Application\Bitpay.Application.csproj", "{78142567-4ED5-4FA4-9AEB-53B2ABB0CCC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpay.Contracts", "Bitpay.Contracts\Bitpay.Contracts.csproj", "{068409D9-DF08-42AC-B5F7-094FC2884666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97F5DC18-738D-480C-897F-63F109D8BDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F5DC18-738D-480C-897F-63F109D8BDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F5DC18-738D-480C-897F-63F109D8BDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F5DC18-738D-480C-897F-63F109D8BDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78142567-4ED5-4FA4-9AEB-53B2ABB0CCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78142567-4ED5-4FA4-9AEB-53B2ABB0CCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78142567-4ED5-4FA4-9AEB-53B2ABB0CCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78142567-4ED5-4FA4-9AEB-53B2ABB0CCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068409D9-DF08-42AC-B5F7-094FC2884666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068409D9-DF08-42AC-B5F7-094FC2884666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068409D9-DF08-42AC-B5F7-094FC2884666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068409D9-DF08-42AC-B5F7-094FC2884666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

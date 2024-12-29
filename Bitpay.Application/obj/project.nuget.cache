@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "O8LcuOTQ9ug=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beha1\\RiderProjects\\Bitpay\\Bitpay.Application\\Bitpay.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beha1\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\beha1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\beha1\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\beha1\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
