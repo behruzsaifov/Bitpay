@@ -3,7 +3,6 @@
 *.dll
 *.pdb
 *.cache
-*.json
 
 # Игнорируем папки Debug и Release
 bin/

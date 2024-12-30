@@ -14,11 +14,15 @@ public class PaymentController : ControllerBase
         _paymentRepository = paymentRepository;
     }
 
-    [HttpPost("payment")]
+    [HttpPost("/api/payment")]
     public async Task<IActionResult> Create([FromBody] CreatePaymentRequest request, CancellationToken token)
     {
         var payment = request.MapToPayment();
-        await _paymentRepository.CreateAsync(payment, token);
-        return Created();
+        var result = await _paymentRepository.CreateAsync(payment, token);
+        if (result is true)
+        {
+            return Created(payment.Id.ToString(), payment);
+        }
+        return BadRequest("Invalid payment request");
     }
 }
