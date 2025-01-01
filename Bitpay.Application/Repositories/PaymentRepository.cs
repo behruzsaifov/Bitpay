@@ -1,4 +1,3 @@
-using System.Transactions;
 using Bitpay.Application.Database;
 using Bitpay.Application.Models;
 using Dapper;
@@ -16,25 +15,59 @@ public class PaymentRepository : IPaymentRepository
 
     public async Task<bool> CreateAsync(Payment payment, CancellationToken token = default)
     {
-        if (payment == null) throw new ArgumentNullException(nameof(payment));
-
         using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
         using var transaction = connection.BeginTransaction();
-    
+
         try
         {
             var result = await connection.ExecuteAsync(
                 new CommandDefinition("""
-                                      INSERT INTO payments (id, "accountNumber", "accountType", amount, currency, status, "createdAt")
-                                      VALUES (@Id, @AccountNumber, @AccountType, @Amount, @Currency, @Status, @CreatedAt)
-                                      """, 
-                    payment, 
+                                      INSERT INTO payments (
+                                          "id", 
+                                          "senderAccountNumber", 
+                                          "senderAccountType", 
+                                          "senderName", 
+                                          "senderSurname", 
+                                          "senderMiddleName", 
+                                          "senderAmount", 
+                                          "senderAmountCurrency", 
+                                          "receiverAccountNumber", 
+                                          "receiverAccountType", 
+                                          "receiverName", 
+                                          "receiverSurname", 
+                                          "receiverMiddleName", 
+                                          "receiverAmount", 
+                                          "receiverAmountCurrency", 
+                                          "status", 
+                                          "createdAt"
+                                      )
+                                      VALUES (
+                                          @Id, 
+                                          @SenderAccountNumber, 
+                                          @SenderAccountType, 
+                                          @SenderName, 
+                                          @SenderSurname, 
+                                          @SenderMiddleName, 
+                                          @SenderAmount, 
+                                          @SenderAmountCurrency, 
+                                          @ReceiverAccountNumber, 
+                                          @ReceiverAccountType, 
+                                          @ReceiverName, 
+                                          @ReceiverSurname, 
+                                          @ReceiverMiddleName, 
+                                          @ReceiverAmount, 
+                                          @ReceiverAmountCurrency, 
+                                          @Status, 
+                                          @CreatedAt
+                                      )
+                                      """,
+                    payment,
                     cancellationToken: token
                 )
             );
 
             if (result > 0)
-            { 
+            {
                 transaction.Commit();
             }
             else
@@ -49,6 +82,35 @@ public class PaymentRepository : IPaymentRepository
             transaction.Rollback();
             // Log the exception (e.g., using ILogger)
             throw new ApplicationException("Failed to insert payment into the database.", ex);
+        }
+    }
+
+    public async Task<bool> ApproveAsync(Guid id, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        using var transaction = connection.BeginTransaction();
+        var result = await connection.ExecuteAsync(
+            new CommandDefinition(
+                """
+                UPDATE payments 
+                SET status = 'Approved' 
+                WHERE id = @Id
+                AND status <> 'Approved'
+                """,
+                new { Id = id },
+                cancellationToken: token
+            )
+        );
+
+        if (result > 0)
+        {
+            transaction.Commit();
+            return true; // Indicate success
+        }
+        else
+        {
+            transaction.Rollback();
+            return false;
         }
     }
 }

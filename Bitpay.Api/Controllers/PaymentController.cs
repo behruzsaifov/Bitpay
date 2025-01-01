@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bitpay.Api.Controllers;
 
+[ApiController]
 public class PaymentController : ControllerBase
 {
     private readonly IPaymentRepository _paymentRepository;
@@ -14,8 +15,8 @@ public class PaymentController : ControllerBase
         _paymentRepository = paymentRepository;
     }
 
-    [HttpPost("/api/payment")]
-    public async Task<IActionResult> Create([FromBody] CreatePaymentRequest request, CancellationToken token)
+    [HttpPost(ApiEndpoints.Payments.Create)]
+    public async Task<IActionResult> Create([FromBody] CreatePaymentRequest request, CancellationToken token = default)
     {
         var payment = request.MapToPayment();
         var result = await _paymentRepository.CreateAsync(payment, token);
@@ -24,5 +25,16 @@ public class PaymentController : ControllerBase
             return Created(payment.Id.ToString(), payment);
         }
         return BadRequest("Invalid payment request");
+    }
+    
+    [HttpPut(ApiEndpoints.Payments.Approve)]
+    public async Task<IActionResult> Update([FromRoute] Guid id,
+        CancellationToken token = default)
+    { var result = await _paymentRepository.ApproveAsync(id, token);
+        if (result is true)
+        {
+            return Ok();
+        }
+        return NotFound();
     }
 }

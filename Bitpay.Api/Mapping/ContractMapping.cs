@@ -11,10 +11,20 @@ public static class ContractMapping
         return new Payment
         {
             Id = Guid.NewGuid(),
-            AccountNumber = request.AccountNumber,
-            AccountType = request.AccountType,
-            Amount = request.Amount,
-            Currency = request.Currency,
+            SenderAccountNumber = request.SenderAccountNumber,
+            SenderAccountType = request.SenderAccountType,
+            SenderName = request.SenderName,
+            SenderSurname = request.SenderSurname,
+            SenderMiddleName = request.SenderMiddleName,
+            SenderAmount = request.SenderAmount,
+            SenderAmountCurrency = request.SenderAmountCurrency,
+            ReceiverAccountNumber = request.ReceiverAccountNumber,
+            ReceiverAccountType = request.ReceiverAccountType,
+            ReceiverName = request.ReceiverName,
+            ReceiverSurname = request.ReceiverSurname,
+            ReceiverMiddleName = request.ReceiverMiddleName,
+            ReceiverAmount = request.ReceiverAmount,
+            ReceiverAmountCurrency = request.ReceiverAmountCurrency,
             Status = PaymentStatus.Pending,
             CreatedAt = DateTime.UtcNow
         };

@@ -5,4 +5,6 @@ namespace Bitpay.Application.Repositories;
 public interface IPaymentRepository
 {
    Task<bool> CreateAsync(Payment payment, CancellationToken token = default);
+   
+   Task<bool> ApproveAsync(Guid id, CancellationToken token = default);
 }
