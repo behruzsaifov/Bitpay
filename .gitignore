@@ -16,6 +16,3 @@ obj/
 *.csproj.user
 *.csprojAssemblyReference.cache
 *.csproj.FileListAbsolute.txt
-
-# Игнорируем файлы SourceLink (отладки)
-*.sourcelink.json
