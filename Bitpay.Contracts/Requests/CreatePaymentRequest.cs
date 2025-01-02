@@ -43,7 +43,4 @@ public class CreatePaymentRequest
 
     [Required]
     public string ReceiverAmountCurrency { get; init; }
-
-    [Required]
-    public string Status { get; init; }
 }
