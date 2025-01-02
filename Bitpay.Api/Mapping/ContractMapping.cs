@@ -27,7 +27,7 @@ public static class ContractMapping
             ReceiverAmount = request.ReceiverAmount,
             ReceiverAmountCurrency = request.ReceiverAmountCurrency,
             Status = PaymentStatus.Pending,
-            CreatedAt = DateTime.UtcNow
+            CreatedAt = DateTime.Now
         };
     }
 

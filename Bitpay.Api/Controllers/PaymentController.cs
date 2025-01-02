@@ -21,9 +21,7 @@ public class PaymentController : ControllerBase
         var payment = request.MapToPayment();
         var result = await _paymentRepository.CreateAsync(payment, token);
         if (result is true)
-        {
             return Created(payment.Id.ToString(), payment);
-        }
         return BadRequest("Invalid payment request");
     }
     
@@ -32,10 +30,7 @@ public class PaymentController : ControllerBase
         CancellationToken token = default)
     { var result = await _paymentRepository.GetByIdAsync(id, token);
         if (result is null)
-        {
             return NotFound();
-        }
-
         var response = result.MapToResponse();
         return Ok(response);
     }
@@ -46,5 +41,14 @@ public class PaymentController : ControllerBase
         var payments = await _paymentRepository.GetAllAsync(token);
         var response = payments.MapToResponse();
         return Ok(response);
+    }
+
+    [HttpPut(ApiEndpoints.Payments.Cancel)]
+    public async Task<IActionResult> Cancel([FromRoute] Guid id, CancellationToken token = default)
+    {
+        var result = await _paymentRepository.CancelAsync(id, token);
+        if (result is true)
+            return Ok();
+        return NotFound();
     }
 }

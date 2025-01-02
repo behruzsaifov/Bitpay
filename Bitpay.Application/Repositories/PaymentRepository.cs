@@ -139,4 +139,34 @@ public class PaymentRepository : IPaymentRepository
             """, cancellationToken: token));
         return payments;
     }
+
+    public async Task<bool> CancelAsync(Guid id, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        using var transaction = connection.BeginTransaction();
+        var result = await connection.ExecuteAsync(
+            new CommandDefinition(
+                """
+                UPDATE payments 
+                SET status = 'Cancelled',
+                "cancelledAt" = NOW() + INTERVAL '5 hours'
+                WHERE id = @Id
+                AND status <> 'Cancelled'
+                """,
+                new { Id = id },
+                cancellationToken: token
+            )
+        );
+
+        if (result > 0)
+        {
+            transaction.Commit();
+            return true;
+        }
+        else
+        {
+            transaction.Rollback();
+            return false;
+        }
+    }
 }

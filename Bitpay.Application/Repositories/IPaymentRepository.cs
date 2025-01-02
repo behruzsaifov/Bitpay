@@ -11,4 +11,6 @@ public interface IPaymentRepository
    
    Task<Payment> GetByIdAsync(Guid id, CancellationToken token = default);
    Task<IEnumerable<Payment>> GetAllAsync(CancellationToken token = default);
+   
+   Task<bool> CancelAsync(Guid id, CancellationToken token = default);
 }
