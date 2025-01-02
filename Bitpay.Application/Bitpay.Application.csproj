@@ -18,4 +18,8 @@
       <PackageReference Include="Npgsql" Version="9.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Bitpay.Contracts\Bitpay.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

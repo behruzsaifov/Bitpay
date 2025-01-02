@@ -46,5 +46,5 @@ public class Payment
     
     public DateTime? UpdatedAt { get; set; }
     
-    public DateTime? CanceledAt { get; set; }
+    public DateTime? CancelledAt { get; set; }
 }

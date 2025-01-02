@@ -1,5 +1,6 @@
 using Bitpay.Application.Database;
 using Bitpay.Application.Models;
+using Bitpay.Contracts.Responses;
 using Dapper;
 
 namespace Bitpay.Application.Repositories;
@@ -112,5 +113,30 @@ public class PaymentRepository : IPaymentRepository
             transaction.Rollback();
             return false;
         }
+    }
+
+    public async Task<Payment?> GetByIdAsync(Guid id, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        var payment = await connection.QuerySingleOrDefaultAsync<Payment>(new CommandDefinition("""
+            SELECT *
+            FROM payments
+            WHERE id = @Id
+            """, new { id }, cancellationToken: token));
+        if (payment is null)
+        {
+            return null;
+        }
+        return payment;
+    }
+
+    public async Task<IEnumerable<Payment>> GetAllAsync(CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        var payments = await connection.QueryAsync<Payment>(new CommandDefinition("""
+            SELECT * FROM
+            payments
+            """, cancellationToken: token));
+        return payments;
     }
 }

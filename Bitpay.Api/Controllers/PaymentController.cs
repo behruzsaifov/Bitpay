@@ -27,14 +27,24 @@ public class PaymentController : ControllerBase
         return BadRequest("Invalid payment request");
     }
     
-    [HttpPut(ApiEndpoints.Payments.Approve)]
-    public async Task<IActionResult> Update([FromRoute] Guid id,
+    [HttpGet(ApiEndpoints.Payments.Get)]
+    public async Task<IActionResult> GetById([FromRoute] Guid id,
         CancellationToken token = default)
-    { var result = await _paymentRepository.ApproveAsync(id, token);
-        if (result is true)
+    { var result = await _paymentRepository.GetByIdAsync(id, token);
+        if (result is null)
         {
-            return Ok();
+            return NotFound();
         }
-        return NotFound();
+
+        var response = result.MapToResponse();
+        return Ok(response);
+    }
+
+    [HttpGet(ApiEndpoints.Payments.GetAll)]
+    public async Task<IActionResult> GetAll(CancellationToken token = default)
+    {
+        var payments = await _paymentRepository.GetAllAsync(token);
+        var response = payments.MapToResponse();
+        return Ok(response);
     }
 }
